@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+
+    <!-- Start Game Window -->
+    <div class="start-game">
+        <h1 class="text-light">Select Your Avatar</h1>
+        <div class="profile">
+            <div class="img">
+                <img src="./Assets/avatar (1).png" class="id" data-id="x">
+                <img src="./Assets/avatar.png" class="id" data-id="y">
+            </div>
+            <div class="img">
+                <img src="./Assets/beard.png" class="id" data-id="y2" alt="">
+                <img src="./Assets/female.png" class="id" data-id="x2" alt="">
+            </div>
+        </div>
+
+        <button class="primary-btn" id="startBtn">
+            Start Game
+        </button>
+    </div>
+
+
+    <!-- Game Board -->
+    <div class="container">
+        <div class="board" id="board">
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+            <div class="block" data-cell></div>
+        </div>
+    </div>
+
+
+    <!-- Draw Window -->
+    <div class="draw-msg">
+        <div class="draw">
+            <h1 class="text-center text-yellow">Draw</h1>
+        </div>
+        <button id="drawBtn" class="primary-btn">Play Again</button>
+    </div>
+
+
+    <!-- winner Window -->
+    <div class="winner-msg">
+        <h1 class="text-center text-yellow">Winner</h1>
+        <div class="winner" style="border-radius: 10px;">
+
+        </div>
+        <button id="restartBtn" class="primary-btn">Restart</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
